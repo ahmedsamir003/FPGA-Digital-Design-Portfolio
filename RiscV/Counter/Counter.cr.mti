@@ -1,0 +1,15 @@
+C:/Users/dunkf/OneDrive/Desktop/NTI/labs/RiscV/Counter/counter.v {1 {vlog -work work -stats=none C:/Users/dunkf/OneDrive/Desktop/NTI/labs/RiscV/Counter/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/dunkf/OneDrive/Desktop/NTI/labs/RiscV/Counter/counter_test.v {1 {vlog -work work -stats=none C:/Users/dunkf/OneDrive/Desktop/NTI/labs/RiscV/Counter/counter_test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module counter_test
+
+Top level modules:
+	counter_test
+
+} {} {}}
