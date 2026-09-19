@@ -40,7 +40,7 @@ The capstone project of this course is a robust **Multi-Clock UART System with A
 ## 🛠️ Tools & Technologies Used
 * **Hardware Description Language**: Verilog / SystemVerilog
 * **Simulation & Verification**: ModelSim / QuestaSim
-* **Synthesis & Implementation**: Intel Quartus Prime / Xilinx Vivado
+* **Synthesis & Implementation**: Synopsys Design Compiler / Intel Quartus Prime / Xilinx Vivado
 * **Linting & CDC Analysis**: Synopsys SpyGlass
 
 ## 📜 How to Use
