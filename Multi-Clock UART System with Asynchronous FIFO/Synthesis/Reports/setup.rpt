@@ -1,0 +1,107 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : system_top
+Version: O-2018.06-SP1
+Date   : Fri Sep 25 02:56:18 2026
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+  Startpoint: rx_prescale[1]
+              (input port clocked by RX_CLK)
+  Endpoint: u_uart_rx_u_RX_FSM_current_state_reg_2_
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  system_top         tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  rx_prescale[1] (in)                                     0.11       2.11 f
+  U356/Y (BUFX4M)                                         0.48       2.59 f
+  U564/Y (NOR3X12M)                                       0.76       3.35 r
+  U622/Y (XNOR2X4M)                                       0.57       3.91 r
+  U529/Y (OAI22X1M)                                       0.58       4.49 f
+  U623/Y (AOI221X4M)                                      0.89       5.37 r
+  U552/Y (NAND4X2M)                                       0.62       5.99 f
+  U628/Y (AOI2B1X4M)                                      0.81       6.80 r
+  U551/Y (INVX4M)                                         0.52       7.33 f
+  U520/Y (NOR3X6M)                                        0.68       8.00 r
+  U519/Y (INVX6M)                                         0.52       8.52 f
+  U588/Y (OAI31X2M)                                       0.81       9.33 r
+  u_uart_rx_u_RX_FSM_current_state_reg_2_/D (DFFRQX2M)
+                                                          0.00       9.33 r
+  data arrival time                                                  9.33
+
+  clock RX_CLK (rise edge)                               10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  u_uart_rx_u_RX_FSM_current_state_reg_2_/CK (DFFRQX2M)
+                                                          0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -9.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: u_async_fifo_u_fifo_rd_r_bin_reg_1_
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: tx_out (output port clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  system_top         tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_async_fifo_u_fifo_rd_r_bin_reg_1_/CK (DFFRQX4M)       0.00       0.00 r
+  u_async_fifo_u_fifo_rd_r_bin_reg_1_/Q (DFFRQX4M)        0.90       0.90 r
+  U368/Y (CLKINVX1M)                                      0.84       1.74 f
+  U647/Y (NOR2X2M)                                        0.64       2.38 r
+  U565/Y (BUFX8M)                                         0.92       3.31 r
+  U663/Y (AOI22X1M)                                       0.66       3.96 f
+  U484/Y (OAI2BB1X1M)                                     0.50       4.47 r
+  U664/Y (AOI211X2M)                                      0.24       4.71 f
+  U385/Y (AOI31X1M)                                       0.73       5.43 r
+  U422/Y (CLKBUFX4M)                                      0.77       6.20 r
+  U397/Y (INVX1M)                                         0.60       6.80 f
+  U675/Y (AOI22X1M)                                       0.78       7.58 r
+  U677/Y (XOR3XLM)                                        0.95       8.53 r
+  U396/Y (XOR3X1M)                                        0.65       9.18 f
+  U370/Y (AOI21BX1M)                                      0.62       9.80 r
+  U678/Y (OAI211X2M)                                      0.40      10.20 f
+  U589/Y (AOI31X4M)                                       0.98      11.18 r
+  tx_out (out)                                            0.00      11.18 r
+  data arrival time                                                 11.18
+
+  clock TX_CLK (rise edge)                               25.00      25.00
+  clock network delay (ideal)                             0.00      25.00
+  clock uncertainty                                      -0.20      24.80
+  output external delay                                  -5.00      19.80
+  data required time                                                19.80
+  --------------------------------------------------------------------------
+  data required time                                                19.80
+  data arrival time                                                -11.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.62
+
+
+1

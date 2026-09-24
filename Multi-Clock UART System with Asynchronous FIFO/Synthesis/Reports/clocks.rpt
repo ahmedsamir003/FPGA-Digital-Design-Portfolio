@@ -1,0 +1,21 @@
+ 
+****************************************
+Report : clocks
+Design : system_top
+Version: O-2018.06-SP1
+Date   : Fri Sep 25 02:56:18 2026
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+RX_CLK          10.00   {0 5}               d         {rx_clk}
+TX_CLK          25.00   {0 12.5}            d         {tx_clk}
+--------------------------------------------------------------------------------
+1
